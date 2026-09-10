@@ -1,0 +1,60 @@
+<?php
+
+
+ require_once '../../private/initialize.php'; ?>
+<?php Main::require_login_admin();
+ $transfer = Transfer::find_all();
+
+?>
+
+<?php require_once SHARED_PATH."/admin_header.php"; ?>
+      <div class="container-fluid">
+          <h4 class="text-center mt-3 mb-3 d-md-none">Account Statements</h4>
+<div class="card mt-md-4">
+  <div class="card-body">
+<div class="table-responsive">
+  <table class="table">
+     <caption class="h5 font-weight-lighter text-muted" style="caption-side: top;">All Transactions</caption>   
+     <a href="<?php print Main::url_for("/bankadmin/transaction/new.php") ?>">New Transaction</a>  
+    <thead>
+    <tr>
+      <th scope="col">Sender Account Number</th>
+      <th scope="col">Reciver's Account Number</th>
+      <th scope="col">Transaction Date</th>
+      <th scope="col">Transaction Type</th>
+      <th scope="col">Amount</th>
+      <!-- <th scope="col">Credit (Cr)</th> -->
+      <th scope="col">Status</th>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+  </thead>
+<?php
+ foreach ($transfer as $transfers): ?>  
+  <tbody>
+    <tr>
+      <th scope="row"><?php print Main::h($transfers->sender_account_number) ?></th>
+      <td><?php print Main::h($transfers->reciever_account_number) ?></td>
+      <td><?php print Main::h($transfers->transfer_date) ?></td>
+      <td><?php print Main::h($transfers->transaction_type. " - ". $transfers->transfer_type) ?></td>
+      <td><?php print Main::h($logged_user->currency  . " ") ?><?php print Main::h($transfers->amount) ?></td>
+      <!-- <td><?php //print Main::h($logged_user->currency  . " ") ?><?php print Main::h($transfers->credit) ?></td> -->
+      <td><?php print Main::h($transfers->transfer_status) ?></td>
+      <td><a href="<?php print Main::url_for("/bankadmin/transaction/view.php?id=".Main::h($transfers->ref_numb)) ?>">View</td>
+      <td><a href="<?php print Main::url_for("/bankadmin/transaction/edit.php?id=".Main::h($transfers->ref_numb)) ?>">Edit</td>
+      <td><a href="<?php print Main::url_for("/bankadmin/transaction/delete.php?id=".Main::h($transfers->ref_numb)) ?>">Delete</td>
+    </tr>
+  </tbody>
+<?php endforeach; ?>
+  </table>
+</div>         
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+</div>
+  <!-- /#wrapper -->
+
+<?php require_once SHARED_PATH."/logged_in_footer.php"; ?>

@@ -1,0 +1,9 @@
+[31-Dec-2024 14:49:11 UTC] PHP Warning:  Undefined property: User::$tax_code in /home/blistrus/public_html/secanov.com/private/classes/Transfer.class.php on line 101
+[31-Dec-2024 14:49:11 UTC] PHP Deprecated:  mysqli::escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home/blistrus/public_html/secanov.com/private/classes/databaseObject.class.php on line 159
+[31-Dec-2024 14:49:11 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'tax_code' at row 1 in /home/blistrus/public_html/secanov.com/private/classes/databaseObject.class.php:102
+Stack trace:
+#0 /home/blistrus/public_html/secanov.com/private/classes/databaseObject.class.php(102): mysqli->query()
+#1 /home/blistrus/public_html/secanov.com/private/classes/databaseObject.class.php(132): DatabaseObject->create()
+#2 /home/blistrus/public_html/secanov.com/transfer/index.php(53): DatabaseObject->save()
+#3 {main}
+  thrown in /home/blistrus/public_html/secanov.com/private/classes/databaseObject.class.php on line 102

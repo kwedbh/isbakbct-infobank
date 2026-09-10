@@ -1,0 +1,10 @@
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Undefined variable: logged_acct in /home/blistrus/public_html/secanov.com/cards/index.php on line 3
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Undefined variable: logged_name in /home/blistrus/public_html/secanov.com/private/shared/logged_in_header.php on line 53
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Undefined variable: logged_user in /home/blistrus/public_html/secanov.com/private/shared/logged_in_header.php on line 56
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Trying to get property 'image_link' of non-object in /home/blistrus/public_html/secanov.com/private/shared/logged_in_header.php on line 56
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Undefined variable: logged_user in /home/blistrus/public_html/secanov.com/private/shared/logged_in_header.php on line 62
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Trying to get property 'account_balance' of non-object in /home/blistrus/public_html/secanov.com/private/shared/logged_in_header.php on line 62
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Undefined variable: logged_user in /home/blistrus/public_html/secanov.com/cards/index.php on line 93
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Trying to get property 'card_front' of non-object in /home/blistrus/public_html/secanov.com/cards/index.php on line 93
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Undefined variable: logged_user in /home/blistrus/public_html/secanov.com/private/shared/footer.php on line 112
+[30-Nov-2024 18:09:45 UTC] PHP Notice:  Trying to get property 'currency' of non-object in /home/blistrus/public_html/secanov.com/private/shared/footer.php on line 112
