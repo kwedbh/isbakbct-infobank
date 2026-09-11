@@ -2,8 +2,9 @@
 
 
 :root{
-  --theme-color: #e22026;
-  --secondary-color: #550401;
+  /* #e22026 */
+  --theme-color: #1565C0;
+  --secondary-color: #42A5F5;
   --text-color: #545151;
   --title-color: #1e242a;
 }

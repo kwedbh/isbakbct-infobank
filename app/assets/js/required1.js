@@ -66,7 +66,7 @@ async function post(method, api, data = '', type = "multipart/form-data") {
             $(".btn").attr("disabled", false);
             $.unblockUI();
             await Swal.fire({
-                title: "AkBank",
+                title: "ISBK CBT",
                 html: response.data.message,
                 icon: "error",
                 buttonsStyling: false,
