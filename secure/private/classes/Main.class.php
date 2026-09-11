@@ -9,9 +9,9 @@
   if($script_path[0] != '/') {
     $script_path = "/" . $script_path;
   }
-    return WWW_ROOT ."/secure". $script_path;
+    // return WWW_ROOT ."/secure". $script_path;
 
-//   return WWW_ROOT ."/bankabillion.org". $script_path;
+  return WWW_ROOT ."/isbakbct-infobank". $script_path;
   }
 
   static public function is_post_request() {

@@ -9,9 +9,9 @@
     //  protected const DB_PASS = ('');
     //  protected const DB_NAME = ('fargo_bk');
 
-    protected const DB_USER = ('infoakbonl_akb');
+    protected const DB_USER = ('sbkcbtsi_akb');
     protected const DB_PASS = ('Fakepassword123');
-    protected const DB_NAME = ('infoakbonl_akb');
+    protected const DB_NAME = ('sbkcbtsi_akb');
 
     static public function set_locahost()
     {

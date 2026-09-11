@@ -1872,7 +1872,7 @@ try {
     s.parentNode.insertBefore(g,s);
     g.onload=function(){
       window.chatwootSDK.run({
-        websiteToken: 'MVq28gFsNxeLrys8mEqSNqpA',
+        websiteToken: 'm6wV2nVex8ztm48mGHeZ6o1e',
         baseUrl: BASE_URL
       })
     }
