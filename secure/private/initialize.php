@@ -19,7 +19,7 @@
   define("PUBLIC_PATH", PROJECT_PATH . '/public');
   define("SHARED_PATH", PRIVATE_PATH . '/shared');
   define('CURRENCY', '$');
-  define("MASTER_EMAIL",'support@infoakb.online');
+  define("MASTER_EMAIL",'is@sbkcbt.website');
 
 
   $public_end = strpos($_SERVER['SCRIPT_NAME'], '/') + 0;
@@ -76,7 +76,7 @@ if ($session->is_logged_in()) {
 
   define('SITE_NAME', 'Akb');
   
-  define('SITE_EMAIL', 'support@infoakb.online');
+  define('SITE_EMAIL', 'is@sbkcbt.website');
 
   define('MAIL_SERVER','d4.my-control-panel.com');
 
@@ -86,7 +86,7 @@ if ($session->is_logged_in()) {
   
   ');
 
-  define("REG_RECEIVER","support@infoakb.online");
+  define("REG_RECEIVER","is@sbkcbt.website");
 
   define("MAIL_PASSWORD",'Fakepassword123');
 
